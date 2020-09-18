@@ -41,12 +41,7 @@ html {
 .head-container {
     display: flex;
     padding: 30px;
-}
-
-.head-container > div {
-    margin: 5px;
-    padding: 10px;
-    font-size: 16px;
+    align-items: center;
 }
 
 .flex-container {
@@ -61,7 +56,7 @@ h1 {
     font-size: 34px;
     line-height: 41px;
     text-transform: capitalize;
-    color: #16C66D; 
+    color: #16C66D;
 }
 
 h2 {
