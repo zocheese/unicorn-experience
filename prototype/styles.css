@@ -1,0 +1,150 @@
+/* Navigation Bar Stuffs */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: white;
+}
+
+li a:hover:not(.active) {
+    color: mediumaquamarine;
+}
+
+.active {
+    color: #4CAF50;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 25px;
+}
+
+/* General Page Layout */
+html {
+    background-color: #F0F8F4;
+}
+
+.head-container {
+    display: flex;
+    padding: 30px;
+}
+
+.head-container > div {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: capitalize;
+    color: #16C66D; 
+}
+
+h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: capitalize;
+    color: #2F3633;
+}
+
+h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: capitalize;
+    color: #2F3633;
+}
+
+h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #B6922E;
+}
+
+h5 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #2F3633;
+}
+
+p1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2F3633;
+}
+
+/* Modules */
+.module-img {
+    transition: .7s ease;
+    width: 240px;
+    margin: 20px;
+    opacity: 1.0;
+}
+
+.module-img:hover {
+    opacity: 0.3;
+}
+
+.left {
+    flex: 3;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    flex: 1;
+}
+
+table, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.start {
+    border: 1px solid black;
+    float: right;
+    justify-content: center;
+    padding: 15px;
+    
+}
