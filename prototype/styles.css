@@ -1,7 +1,7 @@
 /* Navigation Bar Stuffs */
 .nav {
     list-style-type: none;
-    margin: 0;
+    margin: -20px;
     padding: 0;
     overflow: hidden;
     background-color: white;
@@ -15,7 +15,8 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    align-items: center;
+    padding: 20px 16px;
     text-decoration: none;
     background-color: white;
 }
@@ -33,14 +34,30 @@ li a:hover:not(.active) {
     width: 25px;
 }
 
+.profile:hover {
+    opacity: 60%;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.smaller {
+    width: 150px;
+}
+
 /* General Page Layout */
 html {
     background-color: #F0F8F4;
 }
 
+body {
+    margin: 30px;
+}
+
 .head-container {
     display: flex;
-    padding: 30px;
+    padding: 10px;
     align-items: center;
 }
 
@@ -108,6 +125,13 @@ p1 {
     color: #2F3633;
 }
 
+.placeholder {
+    padding: 22px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Modules */
 .module-img {
     transition: .7s ease;
@@ -134,12 +158,15 @@ p1 {
 table, tr {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 250px;
+    margin: 10px;
 }
 
-.start {
-    border: 1px solid black;
-    float: right;
-    justify-content: center;
-    padding: 15px;
-    
+.chap {
+   border-top: 1px solid black;
+   width: 80%;
+}
+
+.transcript {
+    width: 80%;
 }
