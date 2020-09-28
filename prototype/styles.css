@@ -1,15 +1,16 @@
 /* Navigation Bar Stuffs */
 .nav {
     list-style-type: none;
-    margin: -20px;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 100%;
+    margin: 0;
     overflow: hidden;
     background-color: white;
     border-bottom-style: solid;
     border-bottom-color: #E5E5E5;
     position: sticky;
     top: 0;
+
+
 }
 
 li {
@@ -21,7 +22,8 @@ li a {
     color: black;
     text-align: center;
     align-items: center;
-    padding: 20px 16px;
+    padding: 20px;
+    vertical-align: middle;
     text-decoration: none;
     background-color: white;
 }
@@ -36,11 +38,12 @@ li a:hover:not(.active) {
 
 .profile {
     border-radius: 50%;
-    width: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .profile:hover {
-    opacity: 60%;
+    opacity: 100%;
 }
 
 .nav-logo {
@@ -54,19 +57,19 @@ li a:hover:not(.active) {
 /* General Page Layout */
 html {
     background-color: #FFFFFF;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 
 body {
     margin: 30px;
     font-family: "Inter"; sans-serif;
     font-style: normal;
-}
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
 .head-container {
     display: flex;
-    padding: 10px;
+  /*  padding: 10px; */
     align-items: center;
 }
 
@@ -93,6 +96,7 @@ body {
   background-position: center;
   margin: 10px;
 }
+
 
 .bottom-left {
   position: relative;

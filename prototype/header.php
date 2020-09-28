@@ -1,5 +1,5 @@
 <?php
-echo '<li><a href="#profile"><img class="profile" src="prophoto.png"></a></li>
+echo '<li><a href="#profile"><img class="profile" src="profilepic.png"></a></li>
 <li><a href="#notes">Alerts</a></li>  <!-- TODO -->
 <li><a href="#notes">Notes</a></li>
 <li><a href="#dictionary">Dictionary</a></li>
