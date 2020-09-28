@@ -2,9 +2,14 @@
 .nav {
     list-style-type: none;
     margin: -20px;
-    padding: 0;
+    padding-left: 60px;
+    padding-right: 60px;
     overflow: hidden;
     background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: #E5E5E5;
+    position: sticky;
+    top: 0;
 }
 
 li {
@@ -48,7 +53,9 @@ li a:hover:not(.active) {
 
 /* General Page Layout */
 html {
-    background-color: #F0F8F4;
+    background-color: #FFFFFF;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 body {
@@ -68,6 +75,59 @@ body {
     display: flex;
 }
 
+.mod-cover-1 {
+  width: 500px;
+  height: 262px;
+  background-image: url(mod-sample-1.png);
+  background-size: 100%;
+  background-position: center;
+  margin: 10px;
+
+}
+
+.mod-cover-2 {
+  width: 500px;
+  height: 262px;
+  background-image: url(mod-sample-2.png);
+  background-size: 100%;
+  background-position: center;
+  margin: 10px;
+}
+
+.bottom-left {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+}
+.bottom-right {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+.top-left {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.top-right {
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.deadline {
+  position: relative;
+  bottom: -10px;
+  right: -5px;
+}
+
 h1 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
@@ -76,6 +136,7 @@ h1 {
     line-height: 41px;
     text-transform: capitalize;
     color: #16C66D;
+    padding-left: 20px;
 }
 
 h2 {
@@ -125,6 +186,16 @@ p1 {
     font-size: 18px;
     line-height: 24px;
     color: #2F3633;
+}
+
+p2 {
+    font-family: "Inter"; sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration-opacity: 0%;
 }
 
 .placeholder {

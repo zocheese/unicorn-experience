@@ -1,4 +1,4 @@
-<?php 
+<?php
 echo '<li><a href="#profile"><img class="profile" src="prophoto.png"></a></li>
 <li><a href="#notes">Alerts</a></li>  <!-- TODO -->
 <li><a href="#notes">Notes</a></li>
