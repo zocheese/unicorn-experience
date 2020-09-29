@@ -14,7 +14,7 @@
 }
 
 li {
-    float: right;
+    /* float: right; */
 }
 
 li a {
@@ -26,6 +26,7 @@ li a {
     vertical-align: middle;
     text-decoration: none;
     background-color: white;
+    float: right;
 }
 
 li a:hover:not(.active) {
@@ -60,11 +61,11 @@ html {
 }
 
 body {
-    margin: 30px;
-    font-family: "Inter"; sans-serif;
+    max-width: 1260px;
+    margin: auto;
+    padding: 30px;
+    font-family: "Inter";
     font-style: normal;
-    padding-left: 60px;
-    padding-right: 60px;
   }
 
 .head-container {
@@ -78,13 +79,52 @@ body {
     display: flex;
 }
 
+
+/* BUTTON STYLE */
+
+.btn {
+    width: 510px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    border: 2px solid #16C66D;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1 {
+  background-color: #16C66D;
+}
+
+.btn1:hover {
+  color: white;
+  background: #18824C;
+  border: 2px solid #16C66D;
+}
+
+.btn-text {
+  text
+}
+
+
+
+/* MODULE - List */
 .mod-cover-1 {
   width: 500px;
   height: 262px;
   background-image: url(mod-sample-1.png);
   background-size: 100%;
   background-position: center;
-  margin: 10px;
+  margin-right: 20px;
 
 }
 
@@ -94,7 +134,7 @@ body {
   background-image: url(mod-sample-2.png);
   background-size: 100%;
   background-position: center;
-  margin: 10px;
+  margin-right: 20px;
 }
 
 
@@ -132,6 +172,8 @@ body {
   right: -5px;
 }
 
+/* TEXT Styles */
+
 h1 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
@@ -147,8 +189,8 @@ h2 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 34px;
-    line-height: 41px;
+    font-size: 22px;
+    line-height: 10px;
     text-transform: capitalize;
     color: #2F3633;
 }
@@ -157,7 +199,7 @@ h3 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 31px;
     text-transform: capitalize;
     color: #2F3633;
@@ -167,7 +209,7 @@ h4 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 27px;
     text-transform: capitalize;
     color: #B6922E;
@@ -177,7 +219,7 @@ h5 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
     color: #2F3633;
@@ -187,7 +229,7 @@ p1 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     color: #2F3633;
 }
@@ -210,6 +252,48 @@ p2 {
 }
 
 /* Modules */
+
+/* Modules - About Page */
+
+.mod-about {
+  position: relative;
+  width: 1260px;
+  height: 300px;
+  background-image: url(mod-about.png);
+  background-size: cover;
+  background-position: centre;
+  background-repeat: no-repeat;
+}
+
+.mod-about-bg {
+  background-color: #F4F9F7;
+  position: absolute;
+  width: 1260px;
+}
+
+.mod-about-content {
+  display: flex;
+  padding: 10px;
+}
+
+.mod-about-col-1 {
+  float: left;
+  position: relative;
+  width: 620px;
+  height: 240px;
+  padding: 10px 30px 30px 30px;
+}
+
+.mod-about-col-2 {
+  float: right;
+  position: relative;
+  width: 620px;
+  height: 240px;
+  padding: 10px 30px 30px 30px;
+}
+
+
+
 .module-img {
     transition: .7s ease;
     width: 240px;
