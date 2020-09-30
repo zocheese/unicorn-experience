@@ -77,7 +77,9 @@ body {
 .flex-container {
     display: -webkit-flex;
     display: flex;
+    padding-bottom: 20px;
 }
+
 
 
 /* BUTTON STYLE */
@@ -111,10 +113,35 @@ body {
   border: 2px solid #16C66D;
 }
 
-.btn-text {
-  text
+.btn-sec {
+  width: 160px;
+  height: 60px;
+  border-radius: 2px;
+  border: 2px solid #C4C4C4;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.btn2:hover {
+  color: white;
+  background: #4F4F4F;
+  border: 2px solid #4F4F4F;
+}
+
+.btn2 {
+  position: relative;
+  float: right;
+}
 
 
 /* MODULE - List */
@@ -172,6 +199,19 @@ body {
   right: -5px;
 }
 
+.comp-container {
+  width: 540px;
+  height: 87px;
+  border: 2px solid #C4C4C4;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+}
+
 /* TEXT Styles */
 
 h1 {
@@ -218,11 +258,11 @@ h4 {
 h5 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 10px;
     text-transform: uppercase;
-    color: #2F3633;
+    color: #16C66D;
 }
 
 p1 {
@@ -230,7 +270,7 @@ p1 {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 30px;
     color: #2F3633;
 }
 
@@ -292,6 +332,13 @@ p2 {
   padding: 10px 30px 30px 30px;
 }
 
+/* Modules - BROWSE Page */
+
+.browse-list {
+  float: right;
+  position: relative;
+  padding-left: 30px;
+}
 
 
 .module-img {
