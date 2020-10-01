@@ -11,16 +11,38 @@
 
     <body>
 
+        <ul class="nav">
+            <li><a href="#profile"><img class="profile" src="profilepic.png"></a></li>
+            <li><a href="#out"><i class="fas fa-sign-out-alt"></i></a></li>
+            <li><a href="#help"><i class="fas fa-question"></i></a></li>
+            <li><a href="#notes"><i class="far fa-bell"></i></a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#dictionary">Dictionary</a></li>
+            <li><a href="#forums">Forums</a></li>
+            <li><a class="active" href="dashboard.html">Dashboard</a></li>
+            <li class="nav-logo"><a href="dashboard.html"><img class="smaller" src="NursityLogo.svg"></a></li>
+        </ul>
+
         <h1>Quiz</h1>
         <div class="quiz-container">
             <div id="quiz"></div>
         </div>
         <button id="previous">Previous Question</button>
-        <button id="next">Next Question</button>
+
+        <button id="check">Submit Answer</button>
         <button id="submit">Submit Quiz</button>
         <div id="results"></div>
 
         <script src="quizcode.js"></script>
+
+
+        <script
+	src="https://cdn.cai.tools.sap/webchat/webchat.js"
+	channelId="47d61e4d-eb52-4a3b-9dc0-94a9f2bfc92d"
+	token="4fcdfc23d34a6b43b7329da6d1e72a3f"
+	id="cai-webchat">
+    </script>
+    
 
     </body>
 </html>

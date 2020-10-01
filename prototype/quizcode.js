@@ -72,6 +72,20 @@
       // show number of correct answers out of total
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
+
+    function  checkResult(){ //TODO
+
+        //gather answers
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+
+        // for each question...
+        myQuestions.forEach( (currentQuestion, questionNumber) => {
+            //locates which question we're on
+            if (currentQuestion === currentSlide){
+
+            }
+        })
+    }
   
     function showSlide(n) {
       slides[currentSlide].classList.remove('active-slide');
@@ -84,11 +98,11 @@
         previousButton.style.display = 'inline-block';
       }
       if(currentSlide === slides.length-1){
-        nextButton.style.display = 'none';
+        checkButton.style.display = 'none';
         submitButton.style.display = 'inline-block';
       }
       else{
-        nextButton.style.display = 'inline-block';
+        checkButton.style.display = 'inline-block';
         submitButton.style.display = 'none';
       }
     }
@@ -104,6 +118,7 @@
     // Variables
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
+    const checkButton = document.getElementById('check');
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
@@ -136,21 +151,19 @@
       }
     ];
   
-    // Kick things off
     buildQuiz();
   
-    // Pagination
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
   
-    // Show the first slide
     showSlide(currentSlide);
   
     // Event listeners
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener("click", showPreviousSlide);
+    checkButton.addEventListener('click', showNextSlide);
     nextButton.addEventListener("click", showNextSlide);
   })();
   
