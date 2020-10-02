@@ -26,7 +26,7 @@
     </ul>
         <!-- Title -->
     <div class="head-container">
-        <a href="javascript:history.go(-1)"onMouseOver="self.status.referrer;return true"><i class="material-icons">arrow_back</i></a>
+        <a href="javascript:history.go(-1)"onMouseOver="self.status.referrer;return true"><i class="material-icons" id="back-btn">arrow_back</i></a>
         <h1>Modules</h1>
     </div>
 
@@ -38,7 +38,7 @@
       <div class="mod-about"></div>
       <div class ="mod-about-bg">
         <div class="mod-about-content">
-            <div class = "mod-about-col-1">
+            <div class = "mod-about-col" id="mod-col-1">
 
               <h2>Geriatrics 101</h2>
 
@@ -58,9 +58,20 @@
 
             </div>
 
-            <div class = "mod-about-col-2">
-
+            <div class = "mod-about-col" id="mod-col-2">
+              <div class="centered">
                 <a href="module-name.html"><div class = "btn btn1">Start Module</div></a>
+              </div>
+                <p class="centered">0% Completed</p>
+                <div><p>Estimated time to complete:</p></div>
+                <div class="flex-container1">
+                  <img src = "time-icon.svg"></img>
+                  <p><b>~20 Mins</b></p>
+                </div>
+                <div class="flex-container1">
+                  <img src = "calendar-icon.svg"></img>
+                  <p><b>Deadline:</b> 09 / 10 / 2020, 18:00</p>
+                </div>
 
             </div>
         </div>

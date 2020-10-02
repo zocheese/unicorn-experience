@@ -9,8 +9,6 @@
     border-bottom-color: #E5E5E5;
     position: sticky;
     top: 0;
-
-
 }
 
 li {
@@ -74,12 +72,20 @@ body {
     align-items: center;
 }
 
+#back-btn{
+  padding-right: 20px;
+}
+
 .flex-container {
     display: -webkit-flex;
     display: flex;
     padding-bottom: 20px;
 }
 
+.flex-container1 {
+    display: -webkit-flex;
+    display: flex;
+}
 
 
 /* BUTTON STYLE */
@@ -105,6 +111,8 @@ body {
 
 .btn1 {
   background-color: #16C66D;
+  width: 600px;
+
 }
 
 .btn1:hover {
@@ -142,6 +150,8 @@ body {
   position: relative;
   float: right;
 }
+
+
 
 
 /* MODULE - List */
@@ -187,10 +197,10 @@ body {
   right: 20px;
 }
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .deadline {
@@ -222,7 +232,6 @@ h1 {
     line-height: 41px;
     text-transform: capitalize;
     color: #16C66D;
-    padding-left: 20px;
 }
 
 h2 {
@@ -301,7 +310,7 @@ p2 {
   height: 300px;
   background-image: url(mod-about.png);
   background-size: cover;
-  background-position: centre;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -316,21 +325,46 @@ p2 {
   padding: 10px;
 }
 
-.mod-about-col-1 {
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Module - columns */
+
+.mod-placeholder {
   float: left;
+  position: relative;
+  width: 500px;
+  height: 262px;
+}
+
+.mod-about-col {
   position: relative;
   width: 620px;
   height: 240px;
+}
+
+#mod-col-1 {
+  float: left;
   padding: 10px 30px 30px 30px;
 }
 
-.mod-about-col-2 {
+#mod-col-2 {
   float: right;
-  position: relative;
-  width: 620px;
-  height: 240px;
   padding: 10px 30px 30px 30px;
 }
+
+#dash-mod {
+  background-image: url(mod-sample-1.png);
+  background-size: 100%;
+  background-position: center;
+  margin-right: 20px;
+}
+
+
+
 
 /* Modules - BROWSE Page */
 
