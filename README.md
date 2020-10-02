@@ -2,6 +2,7 @@
 
 ## Updates
 
+02/10/2020: Version 0.3.1.2 pushed: Started Dashboard and made tweaks on CSS tag names (DIV containers)
 02/10/2020: Version 0.3.1.1 pushed: Improved quiz functionality, quiz page now accessible from modules page
 01/10/2020: Version 0.3.1 pushed: Creation of quiz WIP and quiz page
 30/09/2020: Version 0.3.0.6 pushed: Back to Previous Page functionality Added
