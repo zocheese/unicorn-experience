@@ -91,7 +91,6 @@ body {
 /* BUTTON STYLE */
 
 .btn {
-    width: 510px;
     height: 60px;
     text-align: center;
     text-transform: uppercase;
@@ -100,6 +99,7 @@ body {
     font-style: normal;
     font-weight: bold;
     border: 2px solid #16C66D;
+    background-color: #16C66D;
     cursor: pointer;
     display: inline-block;
     transition-duration: 0.4s;
@@ -110,9 +110,7 @@ body {
 }
 
 .btn1 {
-  background-color: #16C66D;
   width: 600px;
-
 }
 
 .btn1:hover {
@@ -121,8 +119,20 @@ body {
   border: 2px solid #16C66D;
 }
 
+.btn1-dash {
+  position: relative;
+  width: 240px;
+  top: 20px;
+  margin-right: 10px;
+}
+
+.btn1-dash:hover {
+  color: white;
+  background: #18824C;
+  border: 2px solid #16C66D;
+}
+
 .btn-sec {
-  width: 160px;
   height: 60px;
   border-radius: 2px;
   border: 2px solid #C4C4C4;
@@ -149,8 +159,38 @@ body {
 .btn2 {
   position: relative;
   float: right;
+  width: 160px;
 }
 
+.btn2-dash {
+  position: relative;
+  width: 240px;
+  top: 20px;
+  margin-right: 10px;
+}
+
+.btn2-dash:hover {
+  color: white;
+  background: #4F4F4F;
+  border: 2px solid #4F4F4F;
+}
+
+/* DASHBOARD */
+.stats {
+  position: relative;
+  width: 500px;
+  height:70px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.stats-content {
+  float: center;
+  text-align: center;
+}
 
 
 
@@ -209,7 +249,27 @@ body {
   display: flex;
 }
 
-.comp-container {
+.container1 {
+  height: 90px;
+  border: 2px solid #C4C4C4;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+}
+
+#container-comp {
+  width: 540px;
+  justify-content: space-between;
+}
+
+
+
+/*
+.container1 {
   width: 540px;
   height: 87px;
   border: 2px solid #C4C4C4;
@@ -221,6 +281,9 @@ body {
   margin-top: 10px;
   position: relative;
 }
+*/
+
+
 
 /* TEXT Styles */
 
@@ -242,6 +305,15 @@ h2 {
     line-height: 10px;
     text-transform: capitalize;
     color: #2F3633;
+}
+
+h1-1 {
+  font-family: "Inter"; sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  text-transform: capitalize;
+  color: #16C66D;
 }
 
 h3 {
@@ -323,6 +395,7 @@ p2 {
 .mod-about-content {
   display: flex;
   padding: 10px;
+  justify-content: space-between;
 }
 
 .sticky {
@@ -344,6 +417,10 @@ p2 {
   position: relative;
   width: 620px;
   height: 240px;
+}
+
+#mod-col-3 {
+  padding: 10px 30px 30px 30px;
 }
 
 #mod-col-1 {
@@ -371,7 +448,7 @@ p2 {
 .browse-list {
   float: right;
   position: relative;
-  padding-left: 30px;
+  margin-left: 60px;
 }
 
 
