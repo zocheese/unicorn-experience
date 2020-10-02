@@ -397,7 +397,7 @@ table, tr {
 button{
   font-family: "Inter", sans-serif;
 	font-size: 22px;
-	background-color: #279;
+	background-color: #16C66D;
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
@@ -406,7 +406,7 @@ button{
 	margin-bottom: 20px;
 }
 button:hover{
-	background-color: #38a;
+	opacity: 80%;
 }
 
 .slide{

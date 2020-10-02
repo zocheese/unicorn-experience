@@ -23,15 +23,19 @@
             <li class="nav-logo"><a href="dashboard.html"><img class="smaller" src="NursityLogo.svg"></a></li>
         </ul>
 
-        <h1>Quiz</h1>
+        <div class="head-container">
+            <a href="module-name.html"><i class="material-icons">arrow_back</i></a>
+            <h1>Quiz</h1>
+        </div>
         <div class="quiz-container">
             <div id="quiz"></div>
         </div>
-        <button id="previous">Previous Question</button>
-
-        <button id="check">Submit Answer</button>
+        <button id="previous"><i class="fas fa-arrow-left"></i></button>
+        <button id="check"><i class="far fa-check-square"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
         <button id="submit">Submit Quiz</button>
         <div id="results"></div>
+        <div id="outcome"></div>
 
         <script src="quizcode.js"></script>
 

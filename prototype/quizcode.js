@@ -37,18 +37,17 @@
       // finally combine our output list into one string of HTML and put it on the page
       quizContainer.innerHTML = output.join('');
     }
-  
-    function showResults(){
-  
+
+    function checkAnswer(){
+
       // gather answer containers from our quiz
       const answerContainers = quizContainer.querySelectorAll('.answers');
-  
-      // keep track of user's answers
-      let numCorrect = 0;
-  
+
       // for each question...
       myQuestions.forEach( (currentQuestion, questionNumber) => {
-  
+        //locates which question we're on
+        if (questionNumber == currentSlide){
+        
         // find selected answer
         const answerContainer = answerContainers[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
@@ -67,26 +66,27 @@
           // color the answers red
           answerContainers[questionNumber].style.color = 'red';
         }
+      }
+
       });
+
+    }
+  
+    function showResults(){
+
+      //marks the quiz as completed
+      isCompleted = true;
   
       // show number of correct answers out of total
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      if(numCorrect === myQuestions.length){
+        outcomeContainer.innerHTML = `You Passed!`;
+      }
+      else{
+        outcomeContainer.innerHTML = `You Failed!`;
+      }
     }
 
-    function  checkResult(){ //TODO
-
-        //gather answers
-        const answerContainers = quizContainer.querySelectorAll('.answers');
-
-        // for each question...
-        myQuestions.forEach( (currentQuestion, questionNumber) => {
-            //locates which question we're on
-            if (currentQuestion === currentSlide){
-
-            }
-        })
-    }
-  
     function showSlide(n) {
       slides[currentSlide].classList.remove('active-slide');
       slides[n].classList.add('active-slide');
@@ -98,12 +98,15 @@
         previousButton.style.display = 'inline-block';
       }
       if(currentSlide === slides.length-1){
-        checkButton.style.display = 'none';
+        nextButton.style.display = 'none';
         submitButton.style.display = 'inline-block';
       }
       else{
-        checkButton.style.display = 'inline-block';
+        nextButton.style.display = 'inline-block';
         submitButton.style.display = 'none';
+      }
+      if(isCompleted){
+        checkButton.style.display = 'none';
       }
     }
   
@@ -114,10 +117,13 @@
     function showPreviousSlide() {
       showSlide(currentSlide - 1);
     }
-  
+   
     // Variables
+    var isCompleted = false;
+    var numCorrect = 0;
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
+    const outcomeContainer = document.getElementById('outcome');
     const checkButton = document.getElementById('check');
     const submitButton = document.getElementById('submit');
     const myQuestions = [
@@ -163,7 +169,7 @@
     // Event listeners
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener("click", showPreviousSlide);
-    checkButton.addEventListener('click', showNextSlide);
+    checkButton.addEventListener('click', checkAnswer);
     nextButton.addEventListener("click", showNextSlide);
   })();
   
