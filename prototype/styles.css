@@ -496,7 +496,12 @@ table, tr {
 }
 
 .transcript {
-    width: 80%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+    height:250px;
+    overflow: scroll;
 }
 
 /* Quiz */
