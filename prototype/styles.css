@@ -450,6 +450,27 @@ p2 {
 }
 
 
+.mod-about-col-3 {
+  margin-top: 50px;
+  float: left;
+  position: relative;
+  width: 620px;
+  height: 240px;
+  padding: 0px 0px 0px 0px;
+/*  columns: 250px 2;
+  column-gap: 3em; */
+}
+
+.mod-about-col-4 {
+  margin-top: 50px;
+  float: right;
+  position: relative;
+  width: 620px;
+  height: 240px;
+  padding: 0px 0px 0px 0px;
+/*  columns: 250px 2;
+  column-gap: 3em; */
+}
 
 
 /* Modules - BROWSE Page */
