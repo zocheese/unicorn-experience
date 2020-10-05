@@ -60,11 +60,15 @@
   
           // color the answers green
           answerContainers[questionNumber].style.color = 'lightgreen';
+          // popup appears explaining why answer is correct
+          window.alert(currentQuestion.correctNote);
         }
         // if answer is wrong or blank
         else{
           // color the answers red
           answerContainers[questionNumber].style.color = 'red';
+          // popup appears explaining why answer was wrong
+          window.alert(currentQuestion.wrongNote);
         }
       }
 
@@ -85,8 +89,11 @@
       else{
         outcomeContainer.innerHTML = `You Failed!`;
       }
+
+      submitButton.remove();
     }
 
+    // Controls how the buttons appear
     function showSlide(n) {
       slides[currentSlide].classList.remove('active-slide');
       slides[n].classList.add('active-slide');
@@ -107,6 +114,7 @@
       }
       if(isCompleted){
         checkButton.style.display = 'none';
+        submitButton.style.display = 'none';
       }
     }
   
@@ -134,7 +142,9 @@
           b: "4",
           c: "2"
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        correctNote: "haha",
+        wrongNote: "heehee"
       },
       {
         question: "What is the capital of Australia?",
@@ -143,7 +153,9 @@
           b: "Melbourne",
           c: "Canberra"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        correctNote: "haha",
+        wrongNote: "heehee"
       },
       {
         question: "What language is this quiz made in?",
@@ -153,7 +165,9 @@
           c: "Python",
           d: "JavaScript"
         },
-        correctAnswer: "d"
+        correctAnswer: "d",
+        correctNote: "haha",
+        wrongNote: "heehee"
       }
     ];
   
