@@ -1,7 +1,7 @@
 # Unicorn-Experience  
 
 ## Updates
-04/10/2020: Version 0.3.0.1 pushed: Added References in the Modules about page, below the learning outcomes. Finalised the list. 
+04/10/2020: Version 0.3.1.4 pushed: Added References in the Modules about page, below the learning outcomes. Finalised the list. 
 02/10/2020: Version 0.3.1.3 pushed: Dashboard Completed and some CSS Tweaks + 'Review' button alignment fixed
 02/10/2020: Version 0.3.1.2 pushed: Started Dashboard and made tweaks on CSS tag names (DIV containers)
 02/10/2020: Version 0.3.1.1 pushed: Improved quiz functionality, quiz page now accessible from modules page
