@@ -1,6 +1,7 @@
 # Unicorn-Experience  
 
 ## Updates
+06/10/2020: Version 0.3.2.2 pushed: Refined content for Learning Outcomes page
 06/10/2020: Version 0.3.2.1 pushed: Updated content for Learning Outcomes + fixed Reference code + Button colours
 05/10/2020: Version 0.3.2.0 pushed: Updates to quiz UI, prepped quiz for content to be inserted
 04/10/2020: Version 0.3.1.4 pushed: Added References in the Modules about page, below the learning outcomes. Finalised the list.

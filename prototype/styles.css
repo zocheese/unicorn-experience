@@ -466,7 +466,7 @@ p2 {
   position: relative;
   width: 620px;
   height: 240px;
-  padding: 0px 0px 0px 0px;
+  padding-right: 20px;
 }
 
 .mod-about-col-4 {
@@ -474,7 +474,6 @@ p2 {
   position: relative;
   width: 620px;
   height: 240px;
-  padding: 0px 0px 0px 0px;
 }
 
 
