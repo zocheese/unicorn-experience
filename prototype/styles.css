@@ -100,6 +100,7 @@ body {
     font-weight: bold;
     border: 2px solid #16C66D;
     background-color: #16C66D;
+    color: white;
     cursor: pointer;
     display: inline-block;
     transition-duration: 0.4s;
@@ -111,11 +112,11 @@ body {
 /*Changed the button from purple to Black*/
 a{
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 a:visited{
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 .btn1 {
@@ -145,6 +146,7 @@ a:visited{
   height: 60px;
   border-radius: 2px;
   border: 2px solid #C4C4C4;
+  color: #4F4F4F;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -385,7 +387,7 @@ p2 {
 
 /* Modules - About Page */
 
-.mod-about {
+.mod-about-img {
   position: relative;
   width: 1260px;
   height: 300px;
@@ -395,16 +397,24 @@ p2 {
   background-repeat: no-repeat;
 }
 
+.mod-about {
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
 .mod-about-bg {
   background-color: #F4F9F7;
-  position: absolute;
   width: 1260px;
+  height: 550px;
+
 }
 
 .mod-about-content {
   display: flex;
   padding: 10px;
   justify-content: space-between;
+
 }
 
 .sticky {
@@ -426,6 +436,7 @@ p2 {
   position: relative;
   width: 620px;
   height: 240px;
+
 }
 
 #mod-col-3 {
@@ -451,25 +462,19 @@ p2 {
 
 
 .mod-about-col-3 {
-  margin-top: 50px;
   float: left;
   position: relative;
   width: 620px;
   height: 240px;
   padding: 0px 0px 0px 0px;
-/*  columns: 250px 2;
-  column-gap: 3em; */
 }
 
 .mod-about-col-4 {
-  margin-top: 50px;
   float: right;
   position: relative;
   width: 620px;
   height: 240px;
   padding: 0px 0px 0px 0px;
-/*  columns: 250px 2;
-  column-gap: 3em; */
 }
 
 
