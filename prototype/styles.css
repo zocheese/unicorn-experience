@@ -357,6 +357,24 @@ h5 {
     color: #16C66D;
 }
 
+h5 a:hover:not(.active) {
+  color: #DBD9D9;
+}
+
+h6 {
+    font-family: "Inter"; sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #DBD9D9;
+}
+
+h6 a:hover:not(.active) {
+  color: #16C66D;
+}
+
 p1 {
     font-family: "Inter"; sans-serif;
     font-style: normal;
