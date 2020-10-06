@@ -394,6 +394,16 @@ p2 {
     text-decoration-opacity: 0%;
 }
 
+.p3 {
+  font-family: "Inter"; sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #808080;
+
+}
+
 .placeholder {
     padding: 22px;
     width: 95%;
