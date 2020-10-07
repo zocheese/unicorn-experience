@@ -32,7 +32,9 @@ li a:hover:not(.active) {
 }
 
 .active {
+    font-weight: bold;
     color: #4CAF50;
+
 }
 
 .profile {
@@ -112,7 +114,6 @@ body {
 /*Changed the button from purple to Black*/
 a{
   text-decoration: none;
-  color: inherit;
 }
 a:visited{
   text-decoration: none;
