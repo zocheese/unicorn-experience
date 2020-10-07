@@ -1,7 +1,8 @@
 # Unicorn-Experience  
 
 ## Updates
-06/10/2020: Version 0.3.1.5 pushed: Decreased the font size and changed text colour from black to grey. 
+07/10/2020: Version 0.3.3.0 pushed: Navbar bugfixes, quiz bugfixes and content implemented into quiz
+06/10/2020: Version 0.3.2.3 pushed: Decreased the font size and changed text colour from black to grey. 
 06/10/2020: Version 0.3.2.2 pushed: Refined content for Learning Outcomes page
 06/10/2020: Version 0.3.2.1 pushed: Updated content for Learning Outcomes + fixed Reference code + Button colours
 05/10/2020: Version 0.3.2.0 pushed: Updates to quiz UI, prepped quiz for content to be inserted

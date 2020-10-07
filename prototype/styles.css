@@ -188,12 +188,10 @@ a:visited{
 
 /* DASHBOARD */
 .stats {
-  position: relative;
   width: 500px;
   height:70px;
   align-items: center;
   display: flex;
-  position: relative;
   margin: auto;
   justify-content: space-around;
 }
@@ -248,14 +246,12 @@ a:visited{
   right: 20px;
 }
 .centered {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .deadline {
-  position: relative;
   padding-top: 10px;
   display: flex;
 }
@@ -416,7 +412,6 @@ p2 {
 /* Modules - About Page */
 
 .mod-about-img {
-  position: relative;
   width: 1260px;
   height: 300px;
   background-image: url(mod-about.png);
@@ -427,7 +422,7 @@ p2 {
 
 .mod-about {
   margin-bottom: 30px;
-  position: relative;
+  position: static;
   display: inline-block;
 }
 
@@ -461,7 +456,6 @@ p2 {
 }
 
 .mod-about-col {
-  position: relative;
   width: 620px;
   height: 240px;
 
@@ -491,7 +485,6 @@ p2 {
 
 .mod-about-col-3 {
   float: left;
-  position: relative;
   width: 620px;
   height: 240px;
   padding-right: 20px;
@@ -499,7 +492,6 @@ p2 {
 
 .mod-about-col-4 {
   float: right;
-  position: relative;
   width: 620px;
   height: 240px;
 }
@@ -560,7 +552,7 @@ table, tr {
 /* Quiz */
 
 .question{
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .answers {
@@ -604,4 +596,5 @@ button:hover{
   position: relative;
   height: 200px;
   margin-top: 40px;
+  padding: 20px;
 }

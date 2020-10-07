@@ -45,8 +45,10 @@
 
       // for each question...
       myQuestions.forEach( (currentQuestion, questionNumber) => {
-        //locates which question we're on
-        if (questionNumber == currentSlide){
+        //locates which question we're on, and checks if it has been answered already
+        if (questionNumber == currentSlide && isMarked[questionNumber] == false){
+          //marks the question as answered so it cannot be marked again
+          isMarked[questionNumber] = true;
         
         // find selected answer
         const answerContainer = answerContainers[questionNumber];
@@ -68,7 +70,22 @@
           // color the answers red
           answerContainers[questionNumber].style.color = 'red';
           // popup appears explaining why answer was wrong
-          window.alert(currentQuestion.wrongNote);
+          switch(userAnswer){
+            case "a":
+              window.alert(currentQuestion.noteA);
+              break;
+            case "b":
+              window.alert(currentQuestion.noteB);
+              break;
+            case "c":
+              window.alert(currentQuestion.noteC);
+              break;
+            case "d":
+              window.alert(currentQuestion.noteD);
+              break;
+            default:
+              window.alert("You forgot to select an answer!");
+          }
         }
       }
 
@@ -128,6 +145,7 @@
    
     // Variables
     var isCompleted = false;
+    var isMarked = [false, false];
     var numCorrect = 0;
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
@@ -136,38 +154,34 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "What is 2*2?",
+        question: "Dr Thoo discussed the four ways of describing an older person. According to him, what is the preferred method of assessing an older person? <br><br> Please select the preferred method, then click the CHECK button.",
         answers: {
-          a: "6",
-          b: "4",
-          c: "2"
-        },
-        correctAnswer: "b",
-        correctNote: "haha",
-        wrongNote: "heehee"
-      },
-      {
-        question: "What is the capital of Australia?",
-        answers: {
-          a: "Sydney",
-          b: "Melbourne",
-          c: "Canberra"
-        },
-        correctAnswer: "c",
-        correctNote: "haha",
-        wrongNote: "heehee"
-      },
-      {
-        question: "What language is this quiz made in?",
-        answers: {
-          a: "Java",
-          b: "HTML",
-          c: "Python",
-          d: "JavaScript"
+          a: "By simply looking at their age",
+          b: "Assessing their frailty",
+          c: "Assessing their disease burden",
+          d: "Conducting a comprehensive assessment with a multidisciplanary team approach"
         },
         correctAnswer: "d",
-        correctNote: "haha",
-        wrongNote: "heehee"
+        correctNote: "Correct! Having the nurses and medical team working together makes it more comprehensive to assess the older person's health and function in depth.",
+        noteA: "This is a very general decription, but it won't help when looking at individual patients.",
+        noteB: "Identifying frailty is useful but can be broad when describing an older person's health.",
+        noteC: "Identifying disease burden is valid but can be broad when discussing a person's health.",
+        noteD: "how did you do that"
+      },
+      {
+        question: "After listening to Betty's experience, NUM Jackie is concerned about the patient's dignity and dilemma around nappies and older incontinent patients. What should Jackie do? <br><br> Please select the most appropriate action, then click the CHECK button.",
+        answers: {
+          a: "Ask Betty to identify the nurse who offered the nappy",
+          b: "Call a staff meeting and use a collaborative approach to address the issue",
+          c: "Just monitor the situation at this stage as it may have been an isolated incident",
+          d: "Ask for extra staff to better manage the workload"
+        },
+        correctAnswer: "b",
+        correctNote: "Correct! Calling a meeting is the best choice. This enables Jackie to support staff to take ownership and collaborate with peers to develop better practice initiatives.",
+        noteA: "Betty may feel uncomfortable naming the nurse.",
+        noteB: "how did you do that",
+        noteC: "Isolated incidents also need attention.",
+        noteD: "New staff will reduce the workload but may not be able to address the issue unless practice is changed."
       }
     ];
   
