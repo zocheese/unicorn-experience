@@ -1,7 +1,7 @@
 # Unicorn-Experience  
 
 ## Updates
-07/10/2020: Version 0.3.3.1 Chatbot: Updated Avatar and minor bug fixes when triggering Covid skill
+07/10/2020: Version 0.3.3.1 Chatbot: Updated Avatar and minor bug fixes when triggering Covid skill  
 07/10/2020: Version 0.3.3.0 pushed: Navbar bugfixes, quiz bugfixes and content implemented into quiz  
 06/10/2020: Version 0.3.2.4 Chatbot: Provided functionality for Medical Definitions such as AMI & Benign
 06/10/2020: Version 0.3.2.3 pushed: Decreased the font size and changed text colour from black to grey.   
