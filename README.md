@@ -1,8 +1,9 @@
 # Unicorn-Experience  
 
 ## Updates
-15/10/2020: Version 0.4 pushed: Prototype finalised, quiz updated and navbar fixed
-07/10/2020: Version 0.3.3.2 Modules: Updated Module Name and Module Video Transcript Content + video updated + the nav bar active nav button is bolded
+15/10/2020: Version 0.4.1 pushed: Updated Chatbot to provide a Welcome message to greet returning users with reminders and motivation to complete tasks  
+15/10/2020: Version 0.4 pushed: Prototype finalised, quiz updated and navbar fixed  
+07/10/2020: Version 0.3.3.2 Modules: Updated Module Name and Module Video Transcript Content + video updated + the nav bar active nav button is bolded  
 07/10/2020: Version 0.3.3.1 Chatbot: Updated Avatar and minor bug fixes when triggering Covid skill  
 07/10/2020: Version 0.3.3.0 pushed: Navbar bugfixes, quiz bugfixes and content implemented into quiz  
 06/10/2020: Version 0.3.2.4 Chatbot: Provided functionality for Medical Definitions such as AMI & Benign  
