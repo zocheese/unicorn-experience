@@ -98,16 +98,18 @@
       //marks the quiz as completed
       isCompleted = true;
   
-      // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
       if(numCorrect === myQuestions.length){
-        outcomeContainer.innerHTML = `You Passed!`;
+        passImg.style.display = 'block';
       }
       else{
-        outcomeContainer.innerHTML = `You Failed!`;
+        failedImg.style.display = 'block';
       }
 
       submitButton.remove();
+      checkButton.remove();
+      quizContainer.style.display = 'none';
+      pageContainer.style.display = 'none';
     }
 
     // Controls how the buttons appear
@@ -115,6 +117,10 @@
       slides[currentSlide].classList.remove('active-slide');
       slides[n].classList.add('active-slide');
       currentSlide = n;
+      passImg.style.display = 'none';
+      failedImg.style.display = 'none';
+      quizContainer.style.display = 'inline-block';
+      pageContainer.innerHTML = `${currentSlide + 1} of ${myQuestions.length}`;
       if(currentSlide === 0){
         previousButton.style.display = 'none';
       }
@@ -148,10 +154,11 @@
     var isMarked = [false, false];
     var numCorrect = 0;
     const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const outcomeContainer = document.getElementById('outcome');
+    const pageContainer = document.getElementById('page');
     const checkButton = document.getElementById('check');
     const submitButton = document.getElementById('submit');
+    const failedImg = document.getElementById('failed');
+    const passImg = document.getElementById('passed');
     const myQuestions = [
       {
         question: "Dr Thoo discussed the four ways of describing an older person. According to him, what is the preferred method of assessing an older person? <br><br> Please select the preferred method, then click the CHECK button.",

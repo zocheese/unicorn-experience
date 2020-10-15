@@ -1,18 +1,15 @@
 /* Navigation Bar Stuffs */
 .nav {
-    list-style-type: none;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background-color: white;
-    border-bottom-style: solid;
-    border-bottom-color: #E5E5E5;
-    position: sticky;
-    top: 0;
-}
-
-li {
-    /* float: right; */
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: #E5E5E5;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 li a {
@@ -594,7 +591,15 @@ button:hover{
 }
 .quiz-container{
   position: relative;
-  height: 200px;
+  height: 250px;
+  width: 700px;
   margin-top: 40px;
   padding: 20px;
+  flex: 3;
+}
+
+.result{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

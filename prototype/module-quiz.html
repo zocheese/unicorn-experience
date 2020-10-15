@@ -19,7 +19,7 @@
             <li><a href="#notes">Notes</a></li>
             <li><a href="#dictionary">Dictionary</a></li>
             <li><a href="#forums">Forums</a></li>
-            <li><a class="active" href="dashboard.html">Dashboard</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
             <li class="nav-logo"><a href="dashboard.html"><img class="smaller" src="NursityLogo.svg"></a></li>
         </ul>
 
@@ -27,28 +27,39 @@
             <a href="module-name.html"><i class="material-icons" id="back-btn">arrow_back</i></a>
             <h1>Quiz</h1>
         </div>
-        <div class="quiz-container">
-            <div id="quiz"></div>
+
+        <div class="flex-container">
+            <div class="quiz-container">
+                <div id="quiz"></div>
+                <img id="passed" class="result" src="pass.png">
+                <img id="failed" class="result" src="fail.png">
+            </div>
+            <div class="right">
+                <h4>Chapters</h4>
+                <div class="chap"><h6><a href="#chap1">Chapter 1 (1:52)</a></h6></div>
+                <div class="chap"><h6><a href="#chap2">Chapter 2 (3:55)</a></h6></div>
+                <div class="chap"><h6><a href="#chap3">Chapter 3 (1:25)</a></h6></div>
+                <div class="chap"><h5><a href="module-quiz.html">Quiz</a></h5></div>
+            </div>
         </div>
+
         <div>
             <button id="previous"><i class="fas fa-arrow-left"></i></button>
             <button id="check"><i class="far fa-check-square"></i></button>
             <button id="next"><i class="fas fa-arrow-right"></i></button>
             <button id="submit">Submit Quiz</button>
         </div>
-        <div id="results"></div>
-        <div id="outcome"></div>
-        <div id="notes"></div>
+        <div id="page"></div>
 
         <script src="quizcode.js"></script>
 
 
         <script
-	src="https://cdn.cai.tools.sap/webchat/webchat.js"
-	channelId="47d61e4d-eb52-4a3b-9dc0-94a9f2bfc92d"
-	token="4fcdfc23d34a6b43b7329da6d1e72a3f"
-	id="cai-webchat">
-    </script>
+	    src="https://cdn.cai.tools.sap/webchat/webchat.js"
+	    channelId="47d61e4d-eb52-4a3b-9dc0-94a9f2bfc92d"
+	    token="4fcdfc23d34a6b43b7329da6d1e72a3f"
+	    id="cai-webchat">
+        </script>
 
 
     </body>
